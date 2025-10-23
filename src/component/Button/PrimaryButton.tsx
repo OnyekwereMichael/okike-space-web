@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function PrimaryButton({ label, onClick, className = "" }: { label: string; onClick: () => void; className?: string }) {
   return (
     <button

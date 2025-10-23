@@ -1,4 +1,3 @@
-import { FaCheckCircle, FaInfoCircle } from "react-icons/fa";
 import OkikeLogo from "../../assets/OkikeLogo.png";
 import arrowBack from "../../assets/icon/arrow-move-up-left.png";
 import cancel from "../../assets/icon/cancel.png";
