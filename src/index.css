@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Satoshi;
+    src: url('../src/assets/fonts/Satoshi-Regular.otf');
+}
+@font-face {
+    font-family: Heuvel ;
+    src: url('../src/assets/fonts/HeuvelGroteskDEMO-Regular-BF674fe9fb56512.ttf');
+}
+@import "tailwindcss";
+
+@theme {
+    --font-satoshi: 'Satoshi', sans-serif;
+    --font-heuvel: 'Heuvel', sans-serif;
+}
+
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
