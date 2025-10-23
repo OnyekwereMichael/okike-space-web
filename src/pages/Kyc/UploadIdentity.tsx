@@ -1,18 +1,12 @@
-import { FaCheckCircle, FaInfoCircle } from "react-icons/fa";
 import OkikeLogo from "../../assets/OkikeLogo.png";
 import arrowBack from "../../assets/icon/arrow-move-up-left.png";
 import cancel from "../../assets/icon/cancel.png";
-import CheckMark from '../../assets/icon/checkMarkKyc.png'
-import Info from '../../assets/icon/info-circle.png';
 import SecondaryButton from "../../component/Button/SecondaryButton";
 import { useNavigate } from "react-router-dom";
 import FooterAuth from "../auth/Footer/Footer-auth";
-import { useState } from "react";
-
 
 export default function UploadIdentity() {
     const navigate = useNavigate()
-      const [selected, setSelected] = useState("book");
     
   return (
     <div className="justify-center flex-col py-14 inset-0 overflow-y-auto bg-[#F9F9F9] z-50 flex items-center min-h-screen font-satoshi">

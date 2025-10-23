@@ -1,9 +1,6 @@
 import arrowBack from "../../../assets/icon/arrow-move-up-left.png";
 import cancel from "../../../assets/icon/cancel.png";
 import OkikeLogo from "../../../assets/OkikeLogo.png";
-import OkikeLogoBlack from "../../../assets/OkikeLogoblack.png";
-import phoneIcon from "../../../assets/icon/phone.png";
-import Success from "../../../component/toast/success/success";
 import FooterAuth from "../Footer/Footer-auth";
 import SecondaryButton from "../../../component/Button/SecondaryButton";
 import { useNavigate } from "react-router-dom";

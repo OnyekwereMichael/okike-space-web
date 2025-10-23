@@ -1,4 +1,3 @@
-import React from 'react'
 import OkikeLogoBlack from "../../../assets/OkikeLogoblack.png";
 
 const Footer = () => {

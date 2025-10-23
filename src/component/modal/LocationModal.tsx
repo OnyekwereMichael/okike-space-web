@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FaTimes, FaGlobeAmericas, FaMapMarkerAlt } from "react-icons/fa";
+import { useState } from "react";
 import locationIcon from '../../assets/icon/location.png'
 import cancel from '../../assets/icon/cancel.png'
 import { useNavigate } from "react-router-dom";

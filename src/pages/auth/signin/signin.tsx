@@ -11,10 +11,9 @@ export default function Signin() {
   const [email, setEmail] = useState("");
   const navigate = useNavigate()
 
-  const handleContinue = () => {
-    console.log("Continue with email:", email);
-    // Add navigation or API call here
-  };
+  // const handleContinue = () => {
+  //   console.log("Continue with email:", email);
+  // };
 
   return (
     <div className="justify-center flex-col py-14 inset-0 overflow-y-auto bg-[#F9F9F9] z-50 flex items-center min-h-screen font-satoshi">

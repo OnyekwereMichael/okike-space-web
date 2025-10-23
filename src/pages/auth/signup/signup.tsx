@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import OkikeLogo from '../../../assets/OkikeLogo.png'
 import OkikeLogoBlack from '../../../assets/OkikeLogo.png'
 import mail from '../../../assets/icon/mail-02.png'
