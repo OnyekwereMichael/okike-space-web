@@ -1,0 +1,54 @@
+import { WhyChooseData } from "../../../../constants/MockData/MockData";
+import SpaceCategories from "./component/SpaceCategory";
+
+
+export default function WhyChoose() {
+  return (
+    <section className="max-sm:mt-10">
+      <div
+        className="
+          text-[#023327] 
+          h-[36px] w-[248px] 
+          max-sm:w-[195.8px] max-sm:h-[29.95px]
+          bg-[#0233271A] 
+          rounded-[24px] 
+          py-[6px] px-[24px]
+          max-sm:px-[17.9px] max-sm:py-[4.48px]
+          flex items-center justify-center   
+         
+          mx-auto
+        "
+      >
+        <p className="font-inter-Regular text-[18px] leading-[100%] -tracking-tight max-sm:text-[12px]">
+          Book With Confidence
+        </p>
+
+      </div>
+        <p className="leading-[100%] font-clash-Medium -tracking-tight text-[#023327] max-sm:text-[28px] text-[44px] font-medium text-center mt-4 mb-4">
+          Why Choose Okike?
+        </p>
+
+<div className="p-6 rounded-[10px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+  {WhyChooseData.map((item) => (
+    <div
+      key={item.title}
+      className="flex flex-col bg-[#F8F5F1]  items-start rounded-[10px] p-6  duration-300"
+    >
+      <img src={item.img} alt={item.title} />
+
+      <h3 className="text-[#1C1C1E] text-[22px] uppercase font-clash-Medium leading-[100%] font-[500] mb-2 max-sm:text-[20px]">
+        {item.title}
+      </h3>
+
+      <p className="text-[#6B6B6B] font-inter-Regular text-[16px] leading-[24px] -tracking-tight mt-3 ">
+        {item.description}
+      </p>
+    </div>
+  ))}
+</div>
+
+<SpaceCategories />
+
+    </section>
+  );
+}
