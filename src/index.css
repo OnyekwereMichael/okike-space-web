@@ -1,24 +1,54 @@
 @font-face {
-    font-family: Satoshi;
-    src: url('../src/assets/fonts/Satoshi-Regular.otf');
+    font-family: Clash_Regular;
+    src: url('../src/assets/fonts/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+    font-family: Clash-Medium ;
+    src: url('../src/assets/fonts/ClashDisplay-Medium.otf');
+}
+
+@font-face {
+    font-family: Clash-SemiBold;
+    src: url('../src/assets/fonts/ClashDisplay-Semibold.otf');
+}
+
+@font-face {
+    font-family: Inter_Medium;
+    src: url('../src/assets/fonts/Inter-Medium.otf');
 }
 @font-face {
-    font-family: Heuvel ;
-    src: url('../src/assets/fonts/HeuvelGroteskDEMO-Regular-BF674fe9fb56512.ttf');
+    font-family: Inter_Regular;
+    src: url('../src/assets/fonts/Inter-Regular.otf');
 }
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url('../src/assets/fonts/Inter-SemiBold.otf');
+}
+
 @import "tailwindcss";
 
 @theme {
-    --font-satoshi: 'Satoshi', sans-serif;
-    --font-heuvel: 'Heuvel', sans-serif;
+    --font-inter-Regular: 'Inter_Regular', sans-serif;
+    --font-inter-Medium: 'Inter_Medium', sans-serif;
+    --font-inter-SemiBold: 'Inter-SemiBold', sans-serif;
+    --font-clash-Regular: 'Clash_Regular', sans-serif;
+    --font-clash-Medium: 'Clash-Medium', sans-serif;
+    --font-clash-SemiBold: 'Clash-SemiBold', sans-serif;
 }
 
 
+body{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
 .hide-scrollbar {
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  -ms-overflow-style: none;
+
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, and Opera */
+  display: none; 
 }

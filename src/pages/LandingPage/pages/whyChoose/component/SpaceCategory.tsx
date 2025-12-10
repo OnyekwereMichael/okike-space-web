@@ -1,0 +1,86 @@
+import space from '../../../../../assets/space1.png';
+import shootSpacesImg from '../../../../../assets/shoot.png';
+import man from '../../../../../assets/man.png'
+
+
+export default function SpaceCategories() {
+  const categories = [
+    {
+      title: "SHOOT SPACES",
+      description:
+        "For photography, video, content creation, campaigns, product shoots.",
+      img: shootSpacesImg,
+      profile_Img: man
+    },
+    {
+      title: "EVENT & EXPERIENCE SPACES",
+      description:
+        "For intimate events, brand activations, workshops, celebrations, dinners.",
+      img: shootSpacesImg,
+       profile_Img: man
+    },
+    {
+      title: "UNIQUE & LIFESTYLE SPACES",
+      description:
+        "For rooftops, gardens, aesthetic rooms, creative corners, concept spaces.",
+      img: shootSpacesImg,
+       profile_Img: man
+    },
+  ];
+
+  return (
+   <section
+  className="relative w-full min-h-screen flex flex-col justify-between items-start px-6 lg:px-20 pb-8 pt-8 bg-cover bg-center mt-8"
+  style={{ backgroundImage: `url(${space})` }}
+>
+ 
+  <div className="relative z-10 bg-[#FDE0FF] w-[782px] p-[20px] mb-16 h-[129px] rounded-[5px] flex flex-col justify-between max-sm:w-full">
+    <h2 className="text-[44px] font-[500] leading-[100%] font-clash-Medium tracking-tight text-[#1C1C1E] max-sm:text-[24px]">
+      Find the right space for you
+    </h2>
+    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[18px] max-sm:leading-6">
+      From shoots to celebrations, explore curated spaces.
+    </p>
+  </div>
+
+  {/* Cards */}
+<div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 justify-center">
+  {categories.map((cat) => (
+    <div
+      key={cat.title}
+      className="flex flex-col rounded-[5px] overflow-hidden bg-[#F8F5F1] h-[245px] w-full max-w-[463px] shadow-md p-5"
+    >
+      
+       
+      <div className="w-[369px] h-[52px] flex-1 flex flex-col justify-center max-sm:flex-row max-sm:gap-4 border-b-[0.5px] border-[#3A3F47] ">
+        <div className='sm:hidden '>
+           <img src={cat.profile_Img} className="w-[150px] h-fit  " alt="hbdhbdhhb" />
+        </div>
+        <p className="text-[18px] font-inter-Regular leading-[26px] -tracking-tight font-[400] max-sm:text-[14px] pb-6 border-b-[0.5px] border-[#3A3F47] max-sm:pb-0 max-sm:border-0 max-sm:w-full">
+          {cat.description}
+        </p>
+      </div>
+
+      <div className="relative  w-full max-sm:pt-6">
+        <img
+          src={cat.img}
+          alt={cat.title}
+          className="object-cover "
+        />
+      
+
+        {/* Text on top of image */}
+        {/* <div className="absolute bottom-0 left-0 p-4">
+          <h3 className="text-white font-semibold text-lg">{cat.title}</h3>
+        </div> */}
+      </div>
+
+    
+    </div>
+  ))}
+</div>
+
+</section>
+
+  );
+}
