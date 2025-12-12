@@ -4,7 +4,7 @@ import SpaceCategories from "./component/SpaceCategory";
 
 export default function WhyChoose() {
   return (
-    <section className="max-sm:mt-10">
+    <section className="max-sm:mt-10 mt-20">
       <div
         className="
           text-[#023327] 

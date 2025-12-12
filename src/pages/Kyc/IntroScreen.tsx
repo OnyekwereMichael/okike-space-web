@@ -69,89 +69,98 @@
 
 
 
-import React, { useState } from "react";
-import OkikeLogoGreen from "../../assets/OkikeGreen.png";
-import ArrowBack from "../../assets/icon/arrowBack.png";
-import AuthBgTemplate from "../auth/authbgTemplate/authBgTemplate";
-import PrimaryButton from "../../component/Button/PrimaryButton";
-import checkMark from '../../assets/icon/checkmark-green.png';
-import info from '../../assets/icon/info_circle.png'
+// import React, { useState } from "react";
+// import OkikeLogoGreen from "../../assets/OkikeGreen.png";
+// import ArrowBack from "../../assets/icon/arrowBack.png";
+// import AuthBgTemplate from "../auth/authbgTemplate/authBgTemplate";
+// import PrimaryButton from "../../component/Button/PrimaryButton";
+// import checkMark from '../../assets/icon/checkmark-green.png';
+// import info from '../../assets/icon/info_circle.png'
 
-export default function IntroScreen() {
-  const [checked, setChecked] = useState([true, true, true, true]); // all completed
+// export default function IntroScreen() {
+//   const [checked, setChecked] = useState([true, true, true, true]); // all completed
 
-  const steps = [
-    "Company info",
-    "Confirm your identity",
-    "Verify your space",
-    "Add payout account",
-  ];
+//   const steps = [
+//     "Company info",
+//     "Confirm your identity",
+//     "Verify your space",
+//     "Add payout account",
+//   ];
 
-  return (
-    <div className="flex h-screen w-full overflow-hidden">
-      {/* Left Side (Fixed Background) */}
- <AuthBgTemplate />
+//   return (
+//     <div className="flex h-screen w-full overflow-hidden">
+//       {/* Left Side (Fixed Background) */}
+//  <AuthBgTemplate />
       
 
-      {/* Right Side (Scrollable Content) */}
-      <div className="w-full md:ml-[650px] h-full overflow-y-auto px-6 md:px-12 py-8 scroll-smooth hide-scrollbar">
-        <div className=" mx-auto">
-          {/* Okike Logo */}
-          <div className="mx-auto mb-4">
-            <img src={OkikeLogoGreen} alt="Okike Logo" className="mx-auto" />
-          </div>
+//       {/* Right Side (Scrollable Content) */}
+//       <div className="w-full md:ml-[650px] h-full overflow-y-auto px-6 md:px-12 py-8 scroll-smooth hide-scrollbar">
+//         <div className=" mx-auto">
+//           {/* Okike Logo */}
+//           <div className="mx-auto mb-4">
+//             <img src={OkikeLogoGreen} alt="Okike Logo" className="mx-auto" />
+//           </div>
 
-          {/* Back Arrow */}
-          <img
-            src={ArrowBack}
-            alt="Back"
-            className="cursor-pointer hover:opacity-70 my-3"
-          />
+//           {/* Back Arrow */}
+//           <img
+//             src={ArrowBack}
+//             alt="Back"
+//             className="cursor-pointer hover:opacity-70 my-3"
+//           />
 
-          {/* Title */}
-          <div className="text-center mt-4">
-            <h1 className="text-[32px] font-medium text-[#1D1D1D] leading-[100%] mb-2 font-clash-Medium">
-              Become a Verified Host ✅
-            </h1>
-            <p className="text-[14px] font-[400] tracking-[1] leading-[140%] text-[#9C9C9C] font-inter-Regular ">
-              We verify every host to keep our community safe and trusted. It only takes a few minutes to get verified.
-            </p>
-          </div>
+//           {/* Title */}
+//           <div className="text-center mt-4">
+//             <h1 className="text-[32px] font-medium text-[#1D1D1D] leading-[100%] mb-2 font-clash-Medium">
+//               Become a Verified Host ✅
+//             </h1>
+//             <p className="text-[14px] font-[400] tracking-[1] leading-[140%] text-[#9C9C9C] font-inter-Regular ">
+//               We verify every host to keep our community safe and trusted. It only takes a few minutes to get verified.
+//             </p>
+//           </div>
                
 
-                       {/* Steps */}
-        <div className="flex flex-col gap-5 mb-6 mt-8">
-          {steps.map((step, idx) => (
-            <div key={idx} className="flex items-center gap-3">
-              <div
+//                        {/* Steps */}
+//         <div className="flex flex-col gap-5 mb-6 mt-8">
+//           {steps.map((step, idx) => (
+//             <div key={idx} className="flex items-center gap-3">
+//               <div
                 
-              >
-                {checked[idx] && (
-                 <img src={checkMark} alt=""/>
-                )}
-              </div>
-              <span className="text-[#898989] text-[16px] font-inter-Regular leading-[100%] tracking-[1] font-[400]">{step}</span>
-            </div>
-          ))}
-        </div>
+//               >
+//                 {checked[idx] && (
+//                  <img src={checkMark} alt=""/>
+//                 )}
+//               </div>
+//               <span className="text-[#898989] text-[16px] font-inter-Regular leading-[100%] tracking-[1] font-[400]">{step}</span>
+//             </div>
+//           ))}
+//         </div>
 
-          <div className="bg-[#FFFFFF] w-full h-[62px] text-[#89898966] text-sm font-inter-Regular leading-[100%]  tracking-[1] p-3  mb-6 text-center rounded-[15px] flex  items-center mt-8">
-            <div className="flex items-center gap-2">
-              <img src={info} alt="info"/>
-        <p> 
-          Your details are private and encrypted — only Okike’s team can view
-          them.
-          </p> 
-          </div>
-        </div>
+//           <div className="bg-[#FFFFFF] w-full h-[62px] text-[#89898966] text-sm font-inter-Regular leading-[100%]  tracking-[1] p-3  mb-6 text-center rounded-[15px] flex  items-center mt-8">
+//             <div className="flex items-center gap-2">
+//               <img src={info} alt="info"/>
+//         <p> 
+//           Your details are private and encrypted — only Okike’s team can view
+//           them.
+//           </p> 
+//           </div>
+//         </div>
 
-               <div className="mt-15">
-                  <PrimaryButton label="Next" onClick={() => {}}/>
-              </div>
+//                <div className="mt-15">
+//                   <PrimaryButton label="Next" onClick={() => {}}/>
+//               </div>
 
                   
-        </div>
-      </div>
-    </div>
-  );
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+const IntroScreen = () => {
+  return (
+    <div>IntroScreen</div>
+  )
 }
+
+export default IntroScreen
