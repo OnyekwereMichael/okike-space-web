@@ -5,7 +5,7 @@ import Testimonials from '../../component/Testimonial';
 
 export default function Hero() {
   return (
-    <div className="w-full text-white relative">
+    <div className="w-full text-white relative flex flex-col">
       <Navbar />
 
       {/* Hero Section */}
@@ -14,43 +14,32 @@ export default function Hero() {
         <img
           src={Hero_Img}
           alt="Hero"
-          className="w-full h-full object-cover max-sm:h-[632px]"
+          className="w-full h-full object-cover max-sm:h-[720px]"
         />
 
         {/* Gradient Overlay */}
-        <div
-          className="
-            absolute inset-0
-            bg-gradient-to-r
-            from-[#1C1C1E]
-            via-[#1C1C1E]/30
-            to-[rgba(0,0,0,0.05)]
-          "
-        ></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1E] via-[#1C1C1E]/30 to-[rgba(0,0,0,0.05)]"></div>
 
         {/* Vertical border lines */}
-  
-<div className="absolute inset-0 flex justify-between pointer-events-none h-full max-sm:hidden max-sm:flex-none">
-  {[...Array(35)].map((_, idx) => (
-    <div
-      key={idx}
-      className={`min-h-screen w-0 border-l-[0.5px] ${
-        idx === 5 || idx === 29 ? 'border-[#FFFFFF66]' : 'border-[#FFFFFF1A]'
-      }`}
-    ></div>
-  ))}
-</div>
+        <div className="absolute inset-0 flex justify-between pointer-events-none h-full max-sm:hidden">
+          {[...Array(35)].map((_, idx) => (
+            <div
+              key={idx}
+              className={`min-h-screen w-0 border-l-[0.5px] ${
+                idx === 5 || idx === 29 ? 'border-[#FFFFFF66]' : 'border-[#FFFFFF1A]'
+              }`}
+            ></div>
+          ))}
+        </div>
 
-{/* Mobile Lines */}
-<div className="absolute inset-0 flex justify-between pointer-events-none h-full max-sm:flex sm:hidden">
-  {[...Array(7)].map((_, idx) => (
-    <div
-      key={idx}
-      className={`min-h-screen w-0 border-l-[0.5px] border-[#FFFFFF1A]`}
-    ></div>
-  ))}
-</div>
-
+        <div className="absolute inset-0 flex justify-between pointer-events-none h-full max-sm:flex sm:hidden">
+          {[...Array(7)].map((_, idx) => (
+            <div
+              key={idx}
+              className="min-h-screen w-0 border-l-[0.5px] border-[#FFFFFF1A]"
+            ></div>
+          ))}
+        </div>
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex flex-col items-center text-center px-4">
@@ -67,15 +56,18 @@ export default function Hero() {
             built on trust and transparency.
           </p>
 
+          <div>
+            <SearchBar />
+          </div>
+
           {/* Search Bar */}
           
-            <SearchBar />
-          
+
+           <div className=" ">
+        <Testimonials />
+      </div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <Testimonials />
     </div>
   );
 }

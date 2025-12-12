@@ -16,7 +16,7 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="What are you looking for?"
-          className="pl-10 w-full h-full outline-none text-[18px] font-inter-Regular placeholder:leading-[36px] placeholder:font-inter-Regular placeholder:font-[400] placeholder:text-[18px] placeholder:text-[#BDBDBD]"
+          className="pl-10 w-full h-full outline-none text-[18px] font-inter-Regular placeholder:leading-[36px] placeholder:font-inter-Regular placeholder:font-[400] placeholder:text-[18px] placeholder:text-[#BDBDBD] max-sm:placeholder:text-[15px] "
         />
       </div>
 
@@ -30,7 +30,7 @@ export default function SearchBar() {
         <input
           type="text"
           placeholder="Location"
-          className="pl-10 pr-4 w-full h-full outline-none text-[18px] font-inter-Regular placeholder:leading-[36px] placeholder:font-inter-Regular placeholder:font-[400] placeholder:text-[18px] placeholder:text-[#BDBDBD]"
+          className="pl-10 pr-4 w-full h-full outline-none text-[18px] font-inter-Regular placeholder:leading-[36px] placeholder:font-inter-Regular placeholder:font-[400] placeholder:text-[18px] placeholder:text-[#BDBDBD] max-sm:placeholder:text-[15px] "
         />
       </div>
 </div>
