@@ -3,8 +3,21 @@ import x from '../../../../assets/icon/x.png'
 import ig from '../../../../assets/icon/ig.png'
 import tiktok from '../../../../assets/icon/tiktok.png'
 import facebook from '../../../../assets/icon/facebook.png'
+import { toast } from 'react-hot-toast';
+
 
 export default function Footer() {
+  const handleAppClick = () => {
+    toast('Coming Soon!', { 
+      icon: '🚀',
+      style: {
+        borderRadius: '10px',
+        background: '#023327',
+        color: '#ffffff',
+      },
+    });
+  };
+
   return (
     <footer className="bg-[#023327] px-10 py-16  max-sm:px-4 max-sm:py-4">
       <div className="rounded-[15px] border-[1px] border-[#636363] bg-gradient-to-br from-[#023327] via-[#043F32] to-[#003A2C] px-14 py-16  max-sm:px-3 max-sm:py-3">
@@ -48,6 +61,7 @@ export default function Footer() {
             src={DownloadApp}
             alt="App Store"
             className="cursor-pointer max-sm:mt-4 max-sm:w-[134px] max-sm:h-[37px] sm:hidden"
+            onClick={handleAppClick}
           />
 </div>
             </section>
@@ -57,6 +71,7 @@ export default function Footer() {
             src={DownloadApp}
             alt="App Store"
             className="cursor-pointer max-sm:mt-4 max-sm:w-[200px] max-sm:h-auto max-sm:hidden"
+            onClick={handleAppClick}
           />
         </div>
 

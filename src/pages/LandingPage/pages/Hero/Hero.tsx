@@ -1,4 +1,5 @@
 import Hero_Img from '../../../../assets/HeroImg_landing.png';
+import TypingEffect from '../../../../hooks/useTypingEffect';
 import Navbar from '../../component/Navbar';
 import SearchBar from '../../component/SearchBar';
 import Testimonials from '../../component/Testimonial';
@@ -11,14 +12,11 @@ export default function Hero() {
       {/* Hero Section */}
       <section className="relative w-full h-full">
         {/* Hero Image */}
-  <div className="w-full h-[780px] max-sm:h-[720px] bg-black">
-  <img
-    src={Hero_Img}
-    alt="Hero"
-    className="w-full h-full object-cover"
-  />
-</div>
-
+        <img
+          src={Hero_Img}
+          alt="Hero"
+          className="w-full h-full object-cover max-sm:h-[740px] max-sm:bg-contain"
+        />
 
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1E] via-[#1C1C1E]/30 to-[rgba(0,0,0,0.05)]"></div>
@@ -51,7 +49,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-[105px] font-medium leading-[120px] font-clash-Medium text-[#FFFFFF] w-[813px] h-[240px] -tracking-normal max-sm:text-[44px] max-sm:leading-[56px] max-sm:w-full max-sm:h-auto">
-            BOOK. CREATE. <br /> CONNECT.
+              <TypingEffect text="BOOK. CREATE. CONNECT." />
           </h1>
 
           <p className="text-[#FFFFFF] font-inter-Regular text-[24px] leading-[32px] -tracking-tight text-center w-[730px] mt-4 max-sm:text-[14px] max-sm:w-[327px] px-2 max-sm:mt-2 max-sm:leading-[24px] max-sm:px-0">
@@ -59,14 +57,14 @@ export default function Hero() {
             built on trust and transparency.
           </p>
 
-          <div className='max-sm:mx-3'>
+          <div className='max-sm:mx-4'>
             <SearchBar />
           </div>
 
           {/* Search Bar */}
           
 
-           <div>
+           <div className=" ">
         <Testimonials />
       </div>
         </div>
