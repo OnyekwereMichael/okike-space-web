@@ -3,7 +3,7 @@ import searchIcon from '../../../assets/icon/search.png'
 
 export default function SearchBar() {
   return (
-    <div className="flex flex-col sm:flex-row sm:justify-between  items-stretch sm:items-center mt-8 bg-white rounded-[5px] overflow-hidden text-black w-full max-w-[692px] px-[8px] max-sm:pb-3">
+    <div className="flex flex-col sm:flex-row sm:justify-between  items-stretch sm:items-center mt-8 bg-white rounded-[5px] max-sm:rounded-[2.3px] overflow-hidden text-black w-full max-w-[600px] px-[8px] max-sm:pb-3 ">
 
       {/* First Input */}
       <div className='grid grid-cols-2 gap-3 max-sm:gap-0'>
