@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Hero Section */}
       <section className="relative w-full h-full">
         {/* Hero Image */}
-  <div className="w-full h-[780px] max-sm:h-[740px] bg-black">
+  <div className="w-full h-[780px] max-sm:h-[720px] bg-black">
   <img
     src={Hero_Img}
     alt="Hero"
@@ -59,14 +59,14 @@ export default function Hero() {
             built on trust and transparency.
           </p>
 
-          <div>
+          <div className='max-sm:mx-6'>
             <SearchBar />
           </div>
 
           {/* Search Bar */}
           
 
-           <div className=" ">
+           <div className="max-sm:mx-36 ">
         <Testimonials />
       </div>
         </div>
