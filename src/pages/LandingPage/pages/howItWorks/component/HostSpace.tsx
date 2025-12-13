@@ -25,11 +25,11 @@ export default function HostSpace() {
           For Space Owners
         </span>
 
-        <h1 className="mb-4 font-clash-SemiBold text-[#1C1C1E] text-[60px] leading-[1.1] max-sm:text-[32px] max-sm:w-full">
+        <h1 className="mb-4 font-clash-SemiBold text-[#1C1C1E] text-[60px] leading-[1.1] max-sm:text-[30px] max-sm:w-full">
           Turn your space into income on Okike
         </h1>
 
-        <p className="text-[20px] font-inter-Regular font-[400] leading-[28px] mb-8 max-sm:text-[16px] max-sm:leading-[24px] max-sm:w-full">
+        <p className="text-[20px] font-inter-Regular font-[400] leading-[28px] mb-8 max-sm:text-[15px] max-sm:leading-[24px] max-sm:w-full">
           List your space for free on Okike and earn confidently with every
           booking. Join a community of trusted hosts connecting with verified
           guests across Africa.
@@ -53,7 +53,7 @@ export default function HostSpace() {
           scale-[180%] object-cover 
             w-full max-w-[420px]
          
-            max-sm:scale-105
+            max-sm:scale-110
           "
         />
       </div>

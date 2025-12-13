@@ -19,7 +19,7 @@ export default function HowItWorksCards() {
             {item.title}
           </h2>
 
-          <p className="text-[#666666] leading-6 font-inter-Regular text-[18px] -tracking-tight font-[400] mt-4">
+          <p className="text-[#666666] leading-6 font-inter-Regular text-[16.5px] -tracking-tight font-[400] mt-4">
             {item.text}
           </p>
         </div>

@@ -46,7 +46,7 @@ export default function Testimonials() {
   // visible only on mobile (max-sm)
   className="max-sm:block hidden z-50 mt-6 overflow-hidden"
 >
-  <div className="mx-auto w-full max-w-[330px] px-4">
+  <div className="mx-auto w-full max-w-[350px] px-4">
     <Swiper
       spaceBetween={12}
       slidesPerView={1}
