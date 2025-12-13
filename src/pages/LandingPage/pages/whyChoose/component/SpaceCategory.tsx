@@ -38,7 +38,7 @@ export default function SpaceCategories() {
     <h2 className="text-[44px] font-[500] leading-[100%] font-clash-Medium tracking-tight text-[#1C1C1E] max-sm:text-[24px]">
       Find the right space for you
     </h2>
-    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[18px] max-sm:leading-6">
+    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[18px] max-sm:leading-7 max-sm:mt-2">
       From shoots to celebrations, explore curated spaces.
     </p>
   </div>
@@ -48,15 +48,15 @@ export default function SpaceCategories() {
   {categories.map((cat) => (
     <div
       key={cat.title}
-      className="flex flex-col rounded-[5px] overflow-hidden bg-[#F8F5F1] h-[245px] w-full max-w-[463px] shadow-md p-5"
+      className="flex flex-col rounded-[5px] overflow-hidden bg-[#F8F5F1] h-[245px] w-full max-w-[463px]  p-5"
     >
       
        
       <div className="w-[369px] h-[52px] flex-1 flex flex-col justify-center max-sm:flex-row max-sm:gap-4 border-b-[0.5px] border-[#3A3F47] ">
         <div className='sm:hidden '>
-           <img src={cat.profile_Img} className="w-[150px] h-fit  " alt="hbdhbdhhb" />
+           <img src={cat.profile_Img} className="w-[100px] h-fit  " alt="hbdhbdhhb" />
         </div>
-        <p className="text-[18px] font-inter-Regular leading-[26px] -tracking-tight font-[400] max-sm:text-[14px] pb-6 border-b-[0.5px] border-[#3A3F47] max-sm:pb-0 max-sm:border-0 max-sm:w-full">
+        <p className="text-[18px] font-inter-Regular leading-[26px] -tracking-tight font-[400] max-sm:text-[14px] pb-6 border-b-[0.5px] border-[#3A3F47] max-sm:pb-0 max-sm:border-0 max-sm:w-full ">
           {cat.description}
         </p>
       </div>

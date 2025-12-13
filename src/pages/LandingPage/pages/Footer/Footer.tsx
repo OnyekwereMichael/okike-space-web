@@ -25,7 +25,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your Email"
-                className="h-[48px] placeholder:text-[#BDBDBD] placeholder:font-inter-Regular placeholder:text-[16px] placeholder:font-[400] w-[260px] rounded-[8px] px-4 text-sm outline-none text-[16px] font-inter-Regular"
+                className="h-[48px] placeholder:text-[#BDBDBD] placeholder:font-inter-Regular placeholder:text-[16px] placeholder:font-[400] w-[260px] rounded-[8px] px-4 text-sm outline-none text-[16px] font-inter-Regular max-sm:w-full"
               />
               <button className="border-[1px] border-[#3C3C3C] rounded-[5px] py-[10px] bg-[#1C1C1E] px-[20px] w-[135px] h-[42px] text-sm  text-[#FFFFFF] text-[20px] font-clash-Medium font-medium flex items-center justify-center max-sm:w-fit max-sm:pr-[6px]">
                 Subscribe

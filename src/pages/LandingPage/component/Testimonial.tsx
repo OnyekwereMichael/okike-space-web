@@ -42,38 +42,42 @@ export default function Testimonials() {
       </section>
 
       {/* MOBILE SLIDER - centered and using same card design */}
-      <section
-        // visible only on mobile (max-sm)
-        className="w-full absolute left-1/2 transform -translate-x-1/2 px-4 max-sm:block hidden z-50 mt-6"
-      >
-        <Swiper
-          spaceBetween={12}
-          slidesPerView={1}
-          modules={[Autoplay]}
-          autoplay={{ delay: 3500, disableOnInteraction: false }}
-          loop={true}
-          className="!w-full !h-auto !overflow-visible" 
-        >
-          {testimonialsData.map((item, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="flex justify-center py-4">
-                {/* center a constrained card so it matches desktop look */}
-                <div className="bg-[#FFFFFF] text-black rounded-[5px] shadow-xl w-full max-w-md min-h-[160px] px-5 py-6">
-                  <div className="flex items-center gap-4 mb-4 pb-3 border-b-[0.5px] border-[#3A3F47]">
-                    <div className="text-[#1C1C1E] text-[18px] leading-[100%] uppercase font-clash-Medium">
-                      {item.name}
-                    </div>
-                  </div>
-
-                  <p className="font-[400] text-[#322F42] font-inter-Regular text-[15px] text-left">
-                    {item.text}
-                  </p>
+<section
+  // visible only on mobile (max-sm)
+  className="max-sm:block hidden z-50 mt-6 overflow-hidden"
+>
+  <div className="mx-auto w-full max-w-[420px] px-4">
+    <Swiper
+      spaceBetween={12}
+      slidesPerView={1}
+      modules={[Autoplay]}
+      autoplay={{ delay: 3500, disableOnInteraction: false }}
+      loop={true}
+      watchOverflow
+      className="w-full"
+    >
+      {testimonialsData.map((item, idx) => (
+        <SwiperSlide key={idx} className="!w-full">
+          <div className="flex justify-center py-4">
+            {/* Card */}
+            <div className="bg-white text-black rounded-[5px] w-full min-h-[160px] px-5 py-6">
+              <div className="flex items-center gap-4 mb-4 pb-3 border-b-[0.5px] border-[#3A3F47]">
+                <div className="text-[#1C1C1E] text-[18px] leading-[100%] uppercase font-clash-Medium">
+                  {item.name}
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </section>
+
+              <p className="font-[400] text-[#322F42] font-inter-Regular text-[15px] text-left">
+                {item.text}
+              </p>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
+
     </>
   );
 }
