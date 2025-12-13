@@ -35,10 +35,10 @@ export default function SpaceCategories() {
 >
  
   <div className="relative z-10 bg-[#FDE0FF] w-[782px] p-[20px] mb-16 h-[129px] rounded-[5px] flex flex-col justify-between max-sm:w-full">
-    <h2 className="text-[44px] font-[500] leading-[100%] font-clash-Medium tracking-tight text-[#1C1C1E] max-sm:text-[24px]">
+    <h2 className="text-[44px] font-[500] leading-[100%] font-clash-Medium tracking-tight text-[#1C1C1E] max-sm:text-[22px]">
       Find the right space for you
     </h2>
-    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[18px] max-sm:leading-6 max-sm:mt-2 max-sm:mb-2">
+    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[16px] max-sm:leading-6 max-sm:mt-2 max-sm:mb-2">
       From shoots to celebrations, explore curated spaces.
     </p>
   </div>

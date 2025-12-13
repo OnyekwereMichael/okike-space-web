@@ -14,7 +14,7 @@ export default function Hero() {
         <img
           src={Hero_Img}
           alt="Hero"
-          className="w-full h-full object-cover max-sm:h-[720px]"
+          className="w-full h-full object-cover max-sm:h-[780px]"
         />
 
         {/* Gradient Overlay */}
