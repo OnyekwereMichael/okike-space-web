@@ -9,11 +9,11 @@ export default function WhyChoose() {
         className="
           text-[#023327] 
           h-[36px] w-[248px] 
-          max-sm:w-[195.8px] max-sm:h-[29.95px]
+          max-sm:w-[165.8px] max-sm:h-[29.95px]
           bg-[#0233271A] 
           rounded-[24px] 
           py-[6px] px-[24px]
-          max-sm:px-[17.9px] max-sm:py-[4.48px]
+          max-sm:px-2 max-sm:py-[4.48px]
           flex items-center justify-center   
          
           mx-auto
