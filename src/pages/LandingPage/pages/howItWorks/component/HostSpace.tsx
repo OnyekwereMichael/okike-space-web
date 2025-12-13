@@ -1,7 +1,19 @@
-import arrowRight from '../../../../../assets/icon/arrow.png'
-import hostspace from '../../../../../assets/hostspace.png'
+import { motion } from "framer-motion";
+import arrowRight from '../../../../../assets/icon/arrow.png';
+import hostspace from '../../../../../assets/hostspace.png';
 
 export default function HostSpace() {
+  // Variants for animations
+  const textVariants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: 50 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
     <section
       className="
@@ -20,7 +32,13 @@ export default function HostSpace() {
       "
     >
       {/* TEXT CONTENT */}
-      <div className="w-full max-w-full z-10">
+      <motion.div
+        className="w-full max-w-full z-10"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={textVariants}
+      >
         <span className="mb-6 rounded-[24px] bg-[#EBE4FF] px-4 py-1.5 text-[16px] leading-[100%] text-[#000000] font-inter-Regular font-[400] inline-flex items-center max-sm:mb-2">
           For Space Owners
         </span>
@@ -42,21 +60,26 @@ export default function HostSpace() {
 
           <img src={arrowRight} alt="arrow right" />
         </div>
-      </div>
+      </motion.div>
 
       {/* IMAGE */}
-      <div className="w-full flex justify-center">
+      <motion.div
+        className="w-full flex justify-center"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={imageVariants}
+      >
         <img
           src={hostspace}
           alt="hostspace"
           className="
           scale-[180%] object-cover 
             w-full max-w-[420px]
-         
             max-sm:scale-125
           "
         />
-      </div>
+      </motion.div>
     </section>
   );
 }
