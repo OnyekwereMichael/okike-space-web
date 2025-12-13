@@ -59,14 +59,14 @@ export default function Hero() {
             built on trust and transparency.
           </p>
 
-          <div className='max-sm:mx-6'>
+          <div className='max-sm:mx-3'>
             <SearchBar />
           </div>
 
           {/* Search Bar */}
           
 
-           <div className="max-sm:mx-36 ">
+           <div>
         <Testimonials />
       </div>
         </div>
