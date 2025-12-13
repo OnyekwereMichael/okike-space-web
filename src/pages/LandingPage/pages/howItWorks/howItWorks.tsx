@@ -3,18 +3,17 @@ import HostSpace from "./component/HostSpace";
 
 export default function HowItWorks() {
   return (
-    <section className=" mt-16 px-6">
+    <section className=" mt-16 px-6 max-sm:px-4">
       <div
         className="
           text-[#023327] 
           h-[36px] w-[206px] 
-           max-sm:w-[195.8px] max-sm:h-[29.95px]
+           max-sm:w-[135.8px] max-sm:h-[29.95px]
           bg-[#0233271A] 
           rounded-[24px] 
           py-[6px] px-[24px]
           flex items-center justify-center   
-           max-sm:px-[17.9px] max-sm:py-[4.48px]
-         
+           max-sm:px-4 max-sm:py-[4.48px]
           mx-auto
         "
       >

@@ -30,7 +30,7 @@ export default function SpaceCategories() {
 
   return (
    <section
-  className="relative w-full min-h-screen flex flex-col justify-between items-start px-6 lg:px-20 pb-8 pt-8 bg-cover bg-center mt-8"
+  className="relative w-full min-h-screen flex flex-col justify-between items-start px-6 lg:px-20 pb-8 pt-8 bg-cover bg-center mt-8 max-sm:px-4"
   style={{ backgroundImage: `url(${space})` }}
 >
  
@@ -38,7 +38,7 @@ export default function SpaceCategories() {
     <h2 className="text-[44px] font-[500] leading-[100%] font-clash-Medium tracking-tight text-[#1C1C1E] max-sm:text-[24px]">
       Find the right space for you
     </h2>
-    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[18px] max-sm:leading-7 max-sm:mt-2">
+    <p className="text-[#520061] font-inter-Regular text-[22px] leading-[100%] tracking-tight max-sm:text-[18px] max-sm:leading-6 max-sm:mt-2 max-sm:mb-2">
       From shoots to celebrations, explore curated spaces.
     </p>
   </div>
@@ -52,9 +52,9 @@ export default function SpaceCategories() {
     >
       
        
-      <div className="w-[369px] h-[52px] flex-1 flex flex-col justify-center max-sm:flex-row max-sm:gap-4 border-b-[0.5px] border-[#3A3F47] ">
+      <div className="w-[369px] h-[52px] flex-1 flex flex-col justify-center max-sm:flex-row max-sm:gap-4 border-b-[0.5px] border-[#3A3F47] max-sm:w-full">
         <div className='sm:hidden '>
-           <img src={cat.profile_Img} className="w-[100px] h-fit  " alt="hbdhbdhhb" />
+           <img src={cat.profile_Img} className="w-[150px] h-[80%]  object-contain" alt="hbdhbdhhb" />
         </div>
         <p className="text-[18px] font-inter-Regular leading-[26px] -tracking-tight font-[400] max-sm:text-[14px] pb-6 border-b-[0.5px] border-[#3A3F47] max-sm:pb-0 max-sm:border-0 max-sm:w-full ">
           {cat.description}
@@ -67,12 +67,6 @@ export default function SpaceCategories() {
           alt={cat.title}
           className="object-cover "
         />
-      
-
-        {/* Text on top of image */}
-        {/* <div className="absolute bottom-0 left-0 p-4">
-          <h3 className="text-white font-semibold text-lg">{cat.title}</h3>
-        </div> */}
       </div>
 
     
