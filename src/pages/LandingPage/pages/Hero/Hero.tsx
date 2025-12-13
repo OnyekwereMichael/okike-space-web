@@ -47,7 +47,7 @@ export default function Hero() {
             Verified Spaces Across Africa
           </div>
 
-          <h1 className="text-[105px] font-medium leading-[120px] font-clash-Medium text-[#FFFFFF] w-[813px] h-[240px] -tracking-normal max-sm:text-[46px] max-sm:leading-[56px] max-sm:w-full max-sm:h-auto">
+          <h1 className="text-[105px] font-medium leading-[120px] font-clash-Medium text-[#FFFFFF] w-[813px] h-[240px] -tracking-normal max-sm:text-[44px] max-sm:leading-[56px] max-sm:w-full max-sm:h-auto">
             BOOK. CREATE. <br /> CONNECT.
           </h1>
 

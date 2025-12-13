@@ -2,7 +2,7 @@ import arrowRight from '../../../../../assets/icon/arrow.png'
 import hostspace from '../../../../../assets/hostspace.png'
 export default function HostSpace() {
   return (
-<section className="relative flex items-center justify-between gap-16 rounded-[15px] h-[532px]  bg-[#B296FE] px-16 py-20 overflow-hidden mt-26  max-sm:w-full max-sm:h-auto max-sm:flex-col">
+<section className="relative flex items-center justify-between gap-16 rounded-[15px] h-[532px]  bg-[#B296FE] px-16 py-20 overflow-hidden mt-26  max-sm:w-full max-sm:h-auto max-sm:flex-col max-sm:px-12">
 
       <div className="">
         <span className=" mb-6 rounded-[24px]  bg-[#EBE4FF] px-4 py-1.5 text-[16px] leading-[100%] text-[#000000] font-inter-Regular font-[400] w-[180px] h-[31px] flex items-center">
