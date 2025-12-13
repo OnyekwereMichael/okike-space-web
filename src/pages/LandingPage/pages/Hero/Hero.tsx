@@ -11,11 +11,14 @@ export default function Hero() {
       {/* Hero Section */}
       <section className="relative w-full h-full">
         {/* Hero Image */}
-        <img
-          src={Hero_Img}
-          alt="Hero"
-          className="w-full h-full object-cover max-sm:h-[790px]"
-        />
+  <div className="w-full h-[780px] max-sm:h-[740px] bg-black">
+  <img
+    src={Hero_Img}
+    alt="Hero"
+    className="w-full h-full object-cover"
+  />
+</div>
+
 
         {/* Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1E] via-[#1C1C1E]/30 to-[rgba(0,0,0,0.05)]"></div>
@@ -42,7 +45,7 @@ export default function Hero() {
         </div>
 
         {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col items-center text-center px-4 max-sm:px-2">
+        <div className="absolute inset-0 flex flex-col items-center text-center px-4 max-sm:px-3">
           <div className="bg-[#FFFFFF1A] px-[15px] h-[46px] flex justify-center items-center font-[400] py-[8px] rounded-[5px] text-sm mb-4 backdrop-blur font-clash-Regular text-[#FFFFFF] -tracking-tight leading-[100%] text-[24px] mt-28 max-sm:text-[18px] max-sm:px-3 max-sm:h-[36px] max-sm:py-[6px] max-sm:mt-[5.4rem]">
             Verified Spaces Across Africa
           </div>

@@ -21,11 +21,11 @@ export default function HostSpace() {
     >
       {/* TEXT CONTENT */}
       <div className="w-full max-w-full z-10">
-        <span className="mb-6 rounded-[24px] bg-[#EBE4FF] px-4 py-1.5 text-[16px] leading-[100%] text-[#000000] font-inter-Regular font-[400] inline-flex items-center">
+        <span className="mb-6 rounded-[24px] bg-[#EBE4FF] px-4 py-1.5 text-[16px] leading-[100%] text-[#000000] font-inter-Regular font-[400] inline-flex items-center max-sm:mb-2">
           For Space Owners
         </span>
 
-        <h1 className="mb-4 font-clash-SemiBold text-[#1C1C1E] text-[60px] leading-[1.1] max-sm:text-[30px] max-sm:w-full">
+        <h1 className="mb-4 font-clash-SemiBold text-[#1C1C1E] text-[60px] leading-[1.1] max-sm:text-[30px] max-sm:w-full max-sm:leading-6">
           Turn your space into income on Okike
         </h1>
 
