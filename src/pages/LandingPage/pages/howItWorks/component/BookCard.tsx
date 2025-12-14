@@ -1,9 +1,8 @@
 import { cards } from "../../../../../constants/MockData/MockData";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 export default function HowItWorksCards() {
-  // Parent container variants for staggering
-  const containerVariants = {
+   const containerVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
@@ -12,10 +11,20 @@ export default function HowItWorksCards() {
     },
   };
 
-  // Each card animation
-  const cardVariants = {
-    hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  // Individual card animation
+  const cardVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 40,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1], // ✅ smooth easeOut
+      },
+    },
   };
 
   return (
