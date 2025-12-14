@@ -19,7 +19,21 @@ export default function Hero() {
         />
 
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1E] via-[#1C1C1E]/30 to-[rgba(0,0,0,0.05)]"></div>
+  {/* Gradient Overlay */}
+<div
+  className="
+    absolute inset-0
+    bg-gradient-to-r
+    from-[#1C1C1E]
+    via-[#1C1C1E]/30
+    to-[rgba(0,0,0,0.05)]
+    max-sm:bg-gradient-to-b
+    max-sm:from-black
+    max-sm:via-black/80
+    max-sm:to-black/40
+  "
+></div>
+
 
         {/* Vertical border lines */}
         <div className="absolute inset-0 flex justify-between pointer-events-none h-full max-sm:hidden">
