@@ -1,19 +1,33 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import arrowRight from '../../../../../assets/icon/arrow.png';
 import hostspace from '../../../../../assets/hostspace.png';
 
 export default function HostSpace() {
   // Variants for animations
-  const textVariants = {
+ 
+ const textVariants: Variants = {
     hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1], // smooth easeOut
+      },
+    },
   };
 
-  const imageVariants = {
+  const imageVariants: Variants = {
     hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.22, 1, 0.36, 1],
+      },
+    },
   };
-
   return (
     <section
       className="

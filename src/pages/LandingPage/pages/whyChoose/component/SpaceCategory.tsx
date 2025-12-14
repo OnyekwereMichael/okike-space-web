@@ -2,6 +2,7 @@ import space from '../../../../../assets/space1.png';
 import shootSpacesImg from '../../../../../assets/shoot.png';
 import man from '../../../../../assets/man.png';
 import { motion } from "framer-motion";
+import type { Variants, Transition } from "framer-motion";
 
 export default function SpaceCategories() {
   const categories = [
@@ -34,11 +35,13 @@ export default function SpaceCategories() {
     visible: {
       transition: { staggerChildren: 0.15 }
     }
-  };
+  } as const;
 
-  const cardVariants = {
+  const cardTransition: Transition = { duration: 0.6, ease: "easeOut" };
+
+  const cardVariants: Variants = {
     hidden: { opacity: 0, scale: 0.95, y: 20 },
-    visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: { opacity: 1, scale: 1, y: 0, transition: cardTransition }
   };
 
   return (

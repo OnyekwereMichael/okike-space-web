@@ -1,22 +1,31 @@
 import { WhyChooseData } from "../../../../constants/MockData/MockData";
 import SpaceCategories from "./component/SpaceCategory";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 export default function WhyChoose() {
-  // Variants for parent container (stagger children)
-  const containerVariants = {
+   const containerVariants: Variants = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.2, // delay between each card
+        staggerChildren: 0.2,
       },
     },
   };
 
-  // Variants for each card
-  const cardVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+  // Card animation
+  const cardVariants: Variants = {
+    hidden: {
+      opacity: 0,
+      y: 30,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.22, 1, 0.36, 1], 
+      },
+    },
   };
 
   return (
