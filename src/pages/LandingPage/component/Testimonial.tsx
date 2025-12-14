@@ -19,6 +19,14 @@ const testimonialsData = [
   },
 ];
 
+const containerVariants: Variants = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.2, // ⏱ cards come out one by one
+    },
+  },
+};
 const cardVariants: Variants = {
   hidden: {
     opacity: 0,
