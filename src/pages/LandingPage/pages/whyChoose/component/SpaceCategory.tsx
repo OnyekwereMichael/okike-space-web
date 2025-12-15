@@ -1,5 +1,7 @@
 import space from '../../../../../assets/space1.png';
 import shootSpacesImg from '../../../../../assets/shoot.png';
+import event from '../../../../../assets/event.png'
+import lifestyle from '../../../../../assets/lidestyle.png'
 import man from '../../../../../assets/man.png';
 import { motion } from "framer-motion";
 import type { Variants, Transition } from "framer-motion";
@@ -17,14 +19,14 @@ export default function SpaceCategories() {
       title: "EVENT & EXPERIENCE SPACES",
       description:
         "For intimate events, brand activations, workshops, celebrations, dinners.",
-      img: shootSpacesImg,
+      img: event,
        profile_Img: man
     },
     {
       title: "UNIQUE & LIFESTYLE SPACES",
       description:
         "For rooftops, gardens, aesthetic rooms, creative corners, concept spaces.",
-      img: shootSpacesImg,
+      img: lifestyle,
        profile_Img: man
     },
   ];

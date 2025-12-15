@@ -1,4 +1,8 @@
 import whychooseImg1 from '../../assets/why-choose-img1.png'
+import whychooseImg2 from '../../assets/why-choose-img2.png'
+import whychooseImg3 from '../../assets/why-choose-img3.png'
+import whychooseImg4 from '../../assets/why-choose-img4.png'
+
 import CardBookIcon from "../../assets/how-itworks-img.png";
 import CardScheduleIcon from "../../assets/how-it-works2.png";
 import CardUserIcon from "../../assets/how-it-works3.png";
@@ -12,17 +16,17 @@ export const WhyChooseData = [
     description: 'Every host is vetted through our rigorous identity, location, and property check process. Book with confidence, knowing the person and the space are real.'
   },
   {
-    img: whychooseImg1,
+    img: whychooseImg2,
     title: 'Secure Payments',
     description: 'Payment is held safely by Okike until your booking is completed. Never worry about last-minute cancellations or losing your funds.'
   },
   {
-    img: whychooseImg1,
+    img: whychooseImg3,
     title: 'Transparent Pricing',
     description: 'The price you see is the price you pay. View the full, itemized breakdown—no hidden fees, no surprise charges, and no haggling necessary.'
   },
   {
-    img: whychooseImg1,
+    img: whychooseImg4,
     title: 'Real-Time Availability',
     description: 'Stop the chaos of endless DMs. View accurate, real-time calendars and book instantly or with a clear request. Your time is valuable.'
   },
