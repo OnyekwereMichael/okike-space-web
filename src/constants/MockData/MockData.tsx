@@ -1,6 +1,10 @@
 import whychooseImg1 from '../../assets/why-choose-img1.png'
 import CardBookIcon from "../../assets/how-itworks-img.png";
+import CardScheduleIcon from "../../assets/how-it-works2.png";
+import CardUserIcon from "../../assets/how-it-works3.png";
 import O1 from "../../assets/01.png";
+import O2 from "../../assets/02.png";
+import O3 from "../../assets/03.png";
 export const WhyChooseData = [
   {
     img: whychooseImg1,
@@ -35,16 +39,16 @@ export const cards = [
   {
     id: 2,
     title: "Schedule",
-    text: "Plan your preferred time and finalize your reservation with ease.",
-    icon: CardBookIcon,
-    badge: O1,
+    text: "Bring your vision to life with curated spaces made for shoots, celebrations, and everything in between..",
+    icon: CardScheduleIcon,
+    badge: O2,
   },
   {
     id: 3,
     title: "Experience",
-    text: "Enjoy well-prepared, top-quality spaces tailored for your activities.",
-    icon: CardBookIcon,
-    badge: O1,
+    text: "Build lasting relationships with trusted hosts and a growing community, right here on Okike.",
+    icon: CardUserIcon,
+    badge: O3,
   },
 ];
 

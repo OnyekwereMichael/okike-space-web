@@ -23,18 +23,19 @@ export default function Faq() {
           flex items-center justify-center   
            mb-5
           mx-auto
+          max-xl:px-6
         "
             >
-                <p className="font-inter-Regular text-[18px] leading-[100%] text-[#023327] max-sm:text-[12px] max-sm:w-[199px]">
+                <p className="font-inter-Regular text-[18px]  leading-[100%] text-[#023327] max-sm:text-[12px] max-sm:w-[199px]">
                     Frequently Asked Questions
                 </p>
             </div>
 
-            <p className="leading-[100%] font-clash-Medium -tracking-tight text-[#023327] text-[44px] font-medium text-center mb-10 max-sm:text-[28px]">
+            <p className="leading-[100%] font-clash-Medium max-xl:text-[30px] -tracking-tight text-[#023327] text-[44px] font-medium text-center mb-10 max-sm:text-[28px]">
                 Questions? <br className="sm:hidden"/> We’ve got answers.
             </p>
 
-            <div className="mx-auto w-[1134px] mb-16 px-4 max-sm:w-full">
+            <div className="mx-auto w-[1134px] mb-16 px-4 max-sm:w-full max-xl:w-full">
                 {faqs.map((faq, index) => {
                     const isOpen = index === activeIndex;
 
@@ -57,7 +58,7 @@ export default function Faq() {
                                     }`}
                             >
                                 <span
-                                    className={`leading-[100%] font-clash-Regular font-medium max-sm:text-[20px] text-[24px] 
+                                    className={`leading-[100%] font-clash-Regular font-medium max-sm:text-[20px] text-[24px] max-xl:text-[22px] 
                                     ${isOpen ? "text-white" : "text-black"}`}
                                 >
                                     {faq.question}

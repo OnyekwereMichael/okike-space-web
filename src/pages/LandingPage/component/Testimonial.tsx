@@ -39,7 +39,7 @@ export default function Testimonials() {
   return (
     <>
       {/* DESKTOP VIEW */}
-      <section className="w-full px-10 py-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-sm:hidden">
+      <section className="w-full px-10 py-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-sm:hidden max-xl:hidden ">
         {testimonialsData.map((item, idx) => (
           <motion.div
             key={idx}
@@ -63,8 +63,8 @@ export default function Testimonials() {
       </section>
 
       {/* MOBILE SLIDER */}
-      <section className="max-sm:block hidden z-50 mt-6 overflow-hidden">
-        <div className="mx-auto flex w-[350px] px-4 overflow-hidden">
+      <section className="max-sm:block max-xl:block hidden z-50 mt-6 overflow-hidden">
+        <div className="mx-auto flex w-[350px] max-xl:w-full max-sm:w-[350px] px-4 overflow-hidden">
           <Swiper
             spaceBetween={12}
             slidesPerView={1}

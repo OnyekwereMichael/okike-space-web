@@ -25,11 +25,11 @@ export default function Footer() {
         {/* Subscribe + App Download */}
         <div className="flex items-start justify-between max-sm:flex-col max-sm:items-center max-sm:gap-8">
           {/* Left */}
-          <div className="max-sm:w-full">
+          <div className="max-sm:w-full max-xl:w-full">
             <h3 className="text-[24px] leading-[100%] font-semibold font-clash-SemiBold mb-2 max-sm:mt-2 text-[#FFFFFF] max-sm:text-[22px]">
               Subscribe for Updates
             </h3>
-            <p className="font-[400] text-[#B2B2B2] font-inter-Regular text-[16px] mb-6 max-sm:w-full">
+            <p className="font-[400] text-[#B2B2B2] font-inter-Regular text-[16px] mb-6 max-sm:w-full max-xl:w-full">
               Stay informed about new spaces, upcoming cities, and what’s happening across Okike.
             </p>
 
@@ -45,7 +45,7 @@ export default function Footer() {
               </button>
             </div>
 
-            <section className='flex justify-between items-center mt-8'>
+            <section className='flex justify-between max-xl:justify-start items-center mt-8'>
                      <div className="col-span-2 max-sm:text-center sm:hidden">
             <p className="text-[#FFFFFF] text-[22px] font-medium font-clash-Medium mb-4 max-sm:text-[18px] ">hello@okikespaces.com</p>
             <div className="flex gap-4">
@@ -60,7 +60,7 @@ export default function Footer() {
       <img
             src={DownloadApp}
             alt="App Store"
-            className="cursor-pointer max-sm:mt-4 max-sm:w-[134px] max-sm:h-[37px] sm:hidden"
+            className="cursor-pointer max-sm:mt-4 max-sm:w-[134px] max-sm:h-[37px] sm:hidden "
             onClick={handleAppClick}
           />
 </div>
@@ -76,10 +76,10 @@ export default function Footer() {
         </div>
 
         {/* Footer Links */}
-        <div className="mt-20 grid grid-cols-8 gap-10 max-sm:grid-cols-3 max-sm:gap-6 max-sm:mt-12">
+        <div className="mt-20 grid grid-cols-8 gap-10 max-sm:grid-cols-3 max-sm:gap-6 max-sm:mt-12 max-xl:grid-cols-4">
           <div className="col-span-2 max-sm:text-center max-sm:hidden">
             <p className="text-[#FFFFFF] text-[22px] font-medium font-clash-Medium mb-4">hello@okikespaces.com</p>
-            <div className="flex gap-4 text-xl justify-center max-sm:justify-center">
+            <div className="flex gap-4 text-xl justify-center max-sm:justify-center max-xl:justify-start">
               <img src={ig} alt="instagram" className='cursor-pointer'/>
               <img src={facebook} alt="facebook" className='cursor-pointer'/>
               <img src={x} alt="twitter" className='cursor-pointer'/>

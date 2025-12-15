@@ -49,13 +49,13 @@ export default function WhyChoose() {
         </p>
       </div>
 
-      <p className="leading-[100%] font-clash-Medium -tracking-tight text-[#023327] max-sm:text-[28px] text-[44px] font-medium text-center mt-4 mb-4">
+      <p className="leading-[100%] font-clash-Medium -tracking-tight text-[#023327] max-sm:text-[28px] text-[44px] font-medium text-center mt-4 mb-4 max-xl:text-[30px]">
         Why Choose Okike?
       </p>
 
       {/* Cards Grid with staggered animation */}
       <motion.div
-        className="p-6 rounded-[10px] grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"
+        className="p-6 rounded-[10px] grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 max-xl:grid-col-2"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }} // wait until 30% is in view
