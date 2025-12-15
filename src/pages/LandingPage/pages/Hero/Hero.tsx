@@ -61,7 +61,7 @@ export default function Hero() {
             Verified Spaces Across Africa
           </div>
 
-          <h1 className="text-[105px] font-medium leading-[120px] font-clash-Medium text-[#FFFFFF] w-[813px] h-[240px] -tracking-normal max-sm:text-[44px] max-sm:leading-[56px] max-sm:w-full max-sm:h-auto max-xl:text-[70px] max-xl:h-auto max-xl:leading-[84px]">
+          <h1 className="text-[105px] font-medium leading-[120px] font-clash-Medium text-[#FFFFFF] w-[813px] h-[240px] -tracking-normal max-sm:text-[40px] max-sm:leading-[56px] max-sm:w-full max-sm:h-auto max-xl:text-[70px] max-xl:h-auto max-xl:leading-[84px]">
               <TypingEffect text="BOOK. CREATE. CONNECT." />
           </h1>
 
