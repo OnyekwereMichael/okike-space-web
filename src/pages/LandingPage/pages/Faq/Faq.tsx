@@ -24,6 +24,7 @@ export default function Faq() {
            mb-5
           mx-auto
           max-xl:px-6
+        
         "
             >
                 <p className="font-inter-Regular text-[18px]  leading-[100%] text-[#023327] max-sm:text-[12px] max-sm:w-[199px]">
@@ -35,7 +36,7 @@ export default function Faq() {
                 Questions? <br className="sm:hidden"/> We’ve got answers.
             </p>
 
-            <div className="mx-auto w-[1134px] mb-16 px-4 max-sm:w-full max-xl:w-full max-xl:px-10">
+            <div className="mx-auto w-[1134px] mb-16 px-4 max-sm:w-full max-xl:w-full max-xl:px-10 max-sm:px-4">
                 {faqs.map((faq, index) => {
                     const isOpen = index === activeIndex;
 

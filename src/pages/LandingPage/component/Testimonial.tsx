@@ -5,9 +5,7 @@ import { motion, type Variants } from "framer-motion";
 const testimonialsData = [
   {
     name: "KRISTIN WATSON",
-    text: `This is actually so helpful. Instagram DMs are long. I’m tired of
-    chasing studios every time I need to shoot. — Tomi, Photographer,
-    Lekki (via Instagram DM)`,
+    text: `I loved how simple and clear the booking process was. It saved me both time and hassle.`,
   },
   {
     name: "ALEX JOHNSON",
@@ -64,7 +62,7 @@ export default function Testimonials() {
 
       {/* MOBILE SLIDER */}
       <section className="max-sm:block max-xl:block hidden z-50 mt-6 overflow-hidden">
-        <div className="mx-auto flex w-[350px] max-xl:w-full max-sm:w-[350px] px-4 overflow-hidden">
+        <div className="mx-auto flex w-[350px] max-xl:w-full max-sm:w-[390px] px-4 overflow-hidden">
           <Swiper
             spaceBetween={12}
             slidesPerView={1}

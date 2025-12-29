@@ -1,4 +1,5 @@
 import Hero_Img from '../../../../assets/HeroImg_landing.png';
+import Hero_Img_Mobile from '../../../../assets/hero_img_mobile.png'
 import TypingEffect from '../../../../hooks/useTypingEffect';
 import Navbar from '../../component/Navbar';
 import SearchBar from '../../component/SearchBar';
@@ -15,11 +16,38 @@ export default function Hero() {
         <img
           src={Hero_Img}
           alt="Hero"
-          className="w-full h-[900px] object-cover max-sm:h-[740px] max-sm:bg-contain max-xl:h-[780px]"
+          className="w-full h-[900px] object-cover max-sm:h-[740px] max-sm:bg-contain max-xl:h-[780px] max-sm:hidden"
         />
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1C1C1E] via-[#1C1C1E]/30 to-[rgba(0,0,0,0.05)]"></div>
+        <img
+          src={Hero_Img_Mobile}
+          alt="Hero"
+          className="w-full h-[700px] object-cover max-sm:block hidden"
+        />
+
+{/* Vertical darkness on left side */}
+<div
+  className="
+    absolute inset-0
+    pointer-events-none
+    bg-gradient-to-r
+    from-[#1B160E]/80
+    via-transparent
+    to-transparent
+  "
+></div>
+
+{/* Vertical darkness on right side */}
+<div
+  className="
+    absolute inset-0
+    pointer-events-none
+    bg-gradient-to-l
+    from-[#1B160E]/80
+    via-transparent
+    to-transparent
+  "
+></div>
 
         {/* Vertical border lines */}
        <div className="absolute inset-0 hidden xl:flex justify-between pointer-events-none h-full">
@@ -46,14 +74,21 @@ export default function Hero() {
 </div>
 
 
-        <div className="absolute inset-0 flex max-sm:flex sm:hidden justify-between pointer-events-none h-full">
-  {[...Array(7)].map((_, idx) => (
+    <div className="absolute inset-0 flex max-sm:flex sm:hidden justify-between pointer-events-none h-full">
+  {[...Array(8)].map((_, idx) => (
     <div
-      key={idx}
-      className="min-h-screen w-0 border-l-[0.5px] border-[#FFFFFF1A]"
-    />
+  key={idx}
+  className={`
+    min-h-screen
+    w-0
+    border-[#FFFFFF1A]
+    ${idx === 1 || idx === 6 ? "border-l-[2px]" : "border-l-[0.5px]"}
+  `}
+/>
+
   ))}
 </div>
+
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex flex-col items-center text-center px-4 max-sm:px-3">
