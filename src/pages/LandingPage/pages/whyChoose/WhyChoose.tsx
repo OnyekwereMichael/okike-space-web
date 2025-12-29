@@ -29,7 +29,7 @@ export default function WhyChoose() {
   };
 
   return (
-    <section className="max-sm:mt-10 mt-20">
+    <section className="max-sm:mt-10 mt-16">
       {/* Header */}
       <div
         className="
@@ -55,7 +55,7 @@ export default function WhyChoose() {
 
       {/* Cards Grid with staggered animation */}
       <motion.div
-        className="p-6 rounded-[10px] grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 max-xl:grid-col-2"
+        className="p-6 rounded-[10px] grid gap-4 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 max-xl:grid-col-2  max-sm:p-4"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }} // wait until 30% is in view
@@ -64,7 +64,7 @@ export default function WhyChoose() {
         {WhyChooseData.map((item) => (
           <motion.div
             key={item.title}
-            className="flex flex-col bg-[#F8F5F1] items-start rounded-[10px] p-6 duration-300"
+            className="flex flex-col bg-[#F8F5F1] items-start rounded-[10px] p-6 duration-300 "
             variants={cardVariants}
           >
             <img src={item.img} alt={item.title} />

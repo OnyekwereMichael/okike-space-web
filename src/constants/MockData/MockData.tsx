@@ -9,6 +9,11 @@ import CardUserIcon from "../../assets/how-it-works3.png";
 import O1 from "../../assets/01.png";
 import O2 from "../../assets/02.png";
 import O3 from "../../assets/03.png";
+
+import shootSpacesImg from '../../assets/shoot.png';
+import event from '../../assets/event.png'
+import lifestyle from '../../assets/lidestyle.png'
+import man from '../../assets/man.png';
 export const WhyChooseData = [
   {
     img: whychooseImg1,
@@ -43,7 +48,7 @@ export const cards = [
   {
     id: 2,
     title: "Schedule",
-    text: "Bring your vision to life with curated spaces made for shoots, celebrations, and everything in between..",
+    text: "Bring your vision to life with spaces made for shoots, celebrations, and everything between..",
     icon: CardScheduleIcon,
     badge: O2,
   },
@@ -85,3 +90,27 @@ const faqs = [
       "Okike is launching soon. Join the waitlist to get early access and updates.",
   },
 ];
+
+export   const categories = [
+    {
+      title: "SHOOT SPACES",
+      description:
+        "For photography, video, content creation, campaigns, product shoots.",
+      img: shootSpacesImg,
+      profile_Img: man
+    },
+    {
+      title: "EVENT & EXPERIENCE SPACES",
+      description:
+        "For intimate events, brand activations, workshops, celebrations, dinners.",
+      img: event,
+       profile_Img: man
+    },
+    {
+      title: "UNIQUE & LIFESTYLE SPACES",
+      description:
+        "For rooftops, gardens, aesthetic rooms, creative corners, concept spaces.",
+      img: lifestyle,
+       profile_Img: man
+    },
+  ];

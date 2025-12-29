@@ -1,6 +1,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import { cards } from "../../../../constants/MockData/MockData";
+import HostSpace from "./component/HostSpace";
 
 export default function HowItWorksCards() {
   const containerVariants: Variants = {
@@ -41,6 +42,7 @@ export default function HowItWorksCards() {
            max-sm:px-4 max-sm:py-[4.48px]
           mx-auto
           mt-16
+          max-sm:mt-10
         "
       >
         <p className="font-inter-Regular text-[18px] max-sm:text-[12px] leading-[100%] -tracking-tight text-[#520061]">
@@ -55,10 +57,12 @@ export default function HowItWorksCards() {
     
     <motion.div
       className="
-        mt-10 px-6
+        mt-10 mx-10
+        max-sm:mx-0
         grid grid-cols-3 gap-6
+        
         max-xl:grid-cols-2 max-xl:gap-8
-        max-sm:grid-cols-1 max-sm:gap-6 max-sm:px-3
+        max-sm:grid-cols-1 max-sm:gap-6 max-sm:px-4
       "
       initial="hidden"
       whileInView="visible"
@@ -73,10 +77,12 @@ export default function HowItWorksCards() {
           variants={cardVariants}
           className="
             bg-[#F6F6F6]
-            rounded-[20px]
-            p-8
+            rounded-[15px]
+            
+
+            p-4
             flex flex-col gap-3
-            shadow-sm
+           
             transition-transform duration-300
             hover:-translate-y-1
             max-xl:p-7
@@ -107,14 +113,18 @@ export default function HowItWorksCards() {
             text-[16.5px]
             leading-6
             -tracking-tight
-            mt-2
-            max-xl:text-[15.5px]
+           
+            max-xl:text-[16px]
           ">
             {item.text}
           </p>
         </motion.div>
       ))}
     </motion.div>
+
+    <div>
+      <HostSpace />
+    </div>
     </section>
   );
 }

@@ -5,7 +5,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 w-full flex items-center justify-between px-10 max-sm:px-3 pb-4 z-20 border-b-[0.5px] border-[#FFFFFF66] max-sm:border-[#FFFFFF1A] max-sm:mt-4 max-xl:mt-4">
+    <header className="absolute top-0 left-0 w-full flex items-center justify-between px-10 max-sm:px-3 pb-4 z-20 border-b-[0.5px] border-[#FFFFFF66] max-sm:border-[#FFFFFF1A]  max-sm:mt-4 max-xl:mt-4 pt-3 max-sm:pt-0 max-xl:pt-0">
 
       {/* Logo */}
       <PrimaryLogo />

@@ -19,8 +19,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#023327] px-10 py-16  max-sm:px-4 max-sm:py-4">
-      <div className="rounded-[15px] border-[1px] border-[#636363] bg-gradient-to-br from-[#023327] via-[#043F32] to-[#003A2C] px-14 py-16  max-sm:px-3 max-sm:py-3">
+    <footer className="bg-[#023327] px-10 py-16  max-sm:px-4 max-sm:py-4 max-xl:px-6 max-xl:py-8 ">
+      <div className="rounded-[15px] border-[1px] border-[#636363] bg-gradient-to-br from-[#023327] via-[#043F32] to-[#003A2C] px-14 py-16  max-sm:px-3 max-sm:py-3 max-xl:px-6 max-xl:py-6">
 
         {/* Subscribe + App Download */}
         <div className="flex items-start justify-between max-sm:flex-col max-sm:items-center max-sm:gap-8">
