@@ -1,35 +1,11 @@
 import space from '../../../../../assets/space1.png';
-import shootSpacesImg from '../../../../../assets/shoot.png';
-import event from '../../../../../assets/event.png'
-import lifestyle from '../../../../../assets/lidestyle.png'
-import man from '../../../../../assets/man.png';
+
 import { motion } from "framer-motion";
 import type { Variants, Transition } from "framer-motion";
+import { categories } from '../../../../../constants/MockData/MockData';
 
 export default function SpaceCategories() {
-  const categories = [
-    {
-      title: "SHOOT SPACES",
-      description:
-        "For photography, video, content creation, campaigns, product shoots.",
-      img: shootSpacesImg,
-      profile_Img: man
-    },
-    {
-      title: "EVENT & EXPERIENCE SPACES",
-      description:
-        "For intimate events, brand activations, workshops, celebrations, dinners.",
-      img: event,
-       profile_Img: man
-    },
-    {
-      title: "UNIQUE & LIFESTYLE SPACES",
-      description:
-        "For rooftops, gardens, aesthetic rooms, creative corners, concept spaces.",
-      img: lifestyle,
-       profile_Img: man
-    },
-  ];
+
 
   // Motion variants
   const containerVariants = {
@@ -48,7 +24,7 @@ export default function SpaceCategories() {
 
   return (
    <section
-      className="relative w-full min-h-screen flex flex-col justify-between items-start px-6 lg:px-20 pb-8 pt-8 bg-cover bg-center mt-8 max-sm:px-4 max-xl:px-4 max-xl:min-h-[700px]"
+      className="relative w-full min-h-screen flex flex-col justify-between items-start px-6 lg:px-20 pb-8 pt-8 bg-cover bg-center mt-8 max-sm:px-4 max-xl:px-4 max-xl:min-h-[700px] "
       style={{ backgroundImage: `url(${space})` }}
     >
       <div className="relative z-10 bg-[#FDE0FF] w-[782px] p-[20px] mb-16 h-[129px] rounded-[5px] flex flex-col justify-between max-sm:w-full max-xl:w-full">

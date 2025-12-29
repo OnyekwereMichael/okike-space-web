@@ -36,7 +36,10 @@ export default function HostSpace() {
         gap-16 
         rounded-[15px] 
         bg-[#B296FE] 
-        px-16 py-20 
+        px-10 py-20 
+        mx-10
+        max-sm:mt-14
+        max-sm:mx-3 max-xl:mx-8
         overflow-hidden 
         mt-26
         max-sm:flex-col
@@ -46,11 +49,12 @@ export default function HostSpace() {
         max-sm:px-4
         max-sm:py-10
         max-sm:gap-10
+        
       "
     >
       {/* TEXT CONTENT */}
       <motion.div
-        className="w-full max-w-full z-10"
+        className="w-full max-w-full z-10 max-xl:mt-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
@@ -60,7 +64,7 @@ export default function HostSpace() {
           For Space Owners
         </span>
 
-        <h1 className="mb-4 font-clash-SemiBold text-[#1C1C1E] text-[60px] leading-[1.1] max-sm:text-[30px] max-sm:w-full max-sm:leading-9 max-xl:text-[45px] max-xl:leading-14 max-xm:mt-4">
+        <h1 className="mb-4 font-clash-SemiBold text-[#1C1C1E] text-[50px] leading-[1.1] max-sm:text-[30px] max-sm:w-full max-sm:leading-9 max-xl:text-[45px] max-xl:leading-14 max-xm:mt-4">
           Turn your space into income on Okike
         </h1>
 
@@ -91,7 +95,7 @@ export default function HostSpace() {
           src={hostspace}
           alt="hostspace"
           className="
-          scale-[180%] object-cover 
+          scale-[170%] object-cover 
             w-full max-w-[420px]
             max-sm:scale-110
             max-xl:scale-[160%]

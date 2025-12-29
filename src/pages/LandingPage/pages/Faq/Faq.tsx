@@ -10,7 +10,7 @@ export default function Faq() {
     };
 
     return (
-        <section className="mt-16">
+        <section className="mt-16 max-sm:mt-10">
             <div
                 className="
           text-[#023327] 
@@ -35,7 +35,7 @@ export default function Faq() {
                 Questions? <br className="sm:hidden"/> We’ve got answers.
             </p>
 
-            <div className="mx-auto w-[1134px] mb-16 px-4 max-sm:w-full max-xl:w-full">
+            <div className="mx-auto w-[1134px] mb-16 px-4 max-sm:w-full max-xl:w-full max-xl:px-10">
                 {faqs.map((faq, index) => {
                     const isOpen = index === activeIndex;
 
