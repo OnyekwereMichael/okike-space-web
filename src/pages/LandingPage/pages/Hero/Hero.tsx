@@ -18,13 +18,17 @@ export default function Hero() {
           alt="Hero"
           className="w-full h-[900px] object-cover max-sm:h-[740px] max-sm:bg-contain max-xl:h-[780px] max-sm:hidden"
         />
-
+        
         <img
           src={Hero_Img_Mobile}
           alt="Hero"
-          className="w-full h-[700px] object-cover max-sm:block hidden"
+          className="w-full h-[740px] object-cover max-sm:block hidden"
         />
 
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r max-sm:hidden from-[#1C1C1E] via-[#1C1C1E]/30 to-[rgba(0,0,0,0.05)]"></div>
+
+        
 {/* Vertical darkness on left side */}
 <div
   className="
@@ -34,6 +38,9 @@ export default function Hero() {
     from-[#1B160E]/80
     via-transparent
     to-transparent
+    max-xl:hidden
+    hidden
+    max-sm:block
   "
 ></div>
 
@@ -46,6 +53,9 @@ export default function Hero() {
     from-[#1B160E]/80
     via-transparent
     to-transparent
+    max-xl:hidden
+    hidden
+    max-sm:block
   "
 ></div>
 
@@ -74,21 +84,14 @@ export default function Hero() {
 </div>
 
 
-    <div className="absolute inset-0 flex max-sm:flex sm:hidden justify-between pointer-events-none h-full">
-  {[...Array(8)].map((_, idx) => (
+        <div className="absolute inset-0 flex max-sm:flex sm:hidden justify-between pointer-events-none h-full">
+  {[...Array(7)].map((_, idx) => (
     <div
-  key={idx}
-  className={`
-    min-h-screen
-    w-0
-    border-[#FFFFFF1A]
-    ${idx === 1 || idx === 6 ? "border-l-[2px]" : "border-l-[0.5px]"}
-  `}
-/>
-
+      key={idx}
+      className="min-h-screen w-0 border-l-[0.5px] border-[#FFFFFF1A]"
+    />
   ))}
 </div>
-
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex flex-col items-center text-center px-4 max-sm:px-3">
