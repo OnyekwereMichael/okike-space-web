@@ -46,21 +46,21 @@ export default function HostSpace() {
         max-xl:flex-col
         max-xl:py-6
         max-xl:px-8
-        max-sm:px-4
+        max-sm:px-6
         max-sm:py-10
-        max-sm:gap-10
+        max-sm:gap-3
         
       "
     >
       {/* TEXT CONTENT */}
       <motion.div
-        className="w-full max-w-full z-10 max-xl:mt-6"
+        className="w-full max-w-full z-10"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={textVariants}
       >
-        <span className="mb-6 rounded-[24px] bg-[#EBE4FF] px-4 py-1.5 text-[16px] leading-[100%] text-[#000000] font-inter-Regular font-[400] inline-flex items-center max-sm:mb-2">
+        <span className="mb-6 rounded-[24px] bg-[#EBE4FF] px-4 py-1.5 text-[16px] leading-[100%] text-[#000000] font-inter-Regular font-[400] inline-flex items-center max-sm:mb-4">
           For Space Owners
         </span>
 
@@ -97,7 +97,7 @@ export default function HostSpace() {
           className="
           scale-[170%] object-cover 
             w-full max-w-[420px]
-            max-sm:scale-110
+            max-sm:scale-[120%]
             max-xl:scale-[160%]
           "
         />
